@@ -6,6 +6,7 @@ class frame
 {
     public static $classTop = [];
 
+    //解析URL 控制器
     static public function run()
     {
         $route = new \core\lib\route();
@@ -38,6 +39,4 @@ class frame
             }
         }
     }
-
-
 }
