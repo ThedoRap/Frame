@@ -1,10 +1,15 @@
 <?php
 
 namespace app\controllers;
-class indexController
+
+use core\lib\controllers;
+
+class indexController extends controllers
 {
-    public function index(){
-        $list = M('test')->select();
-        var_dump($list);
+    public function index()
+    {
+        $data = 'hello word';
+        $this->assign('data',$data);
+        $this->dispaly('index.html');
     }
 }
