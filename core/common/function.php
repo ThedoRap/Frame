@@ -15,6 +15,6 @@ function dd($data)
     }
     $str .= $show_data;
     $str .= '';
-    echo $str;
+    die($str);
 }
 

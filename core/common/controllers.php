@@ -1,9 +1,10 @@
 <?php
 
 
-namespace core\lib;
+namespace core\common;
 
 use core\lib\views;
+use core\lib\config;
 
 class controllers
 {
@@ -23,5 +24,15 @@ class controllers
     public function dispaly($file)
     {
         $this->views->dispaly($file);
+    }
+
+    public function config($file, $name)
+    {
+        return config::get($name, $file);
+    }
+
+    public function configAll($file)
+    {
+        return config::all($file);
     }
 }

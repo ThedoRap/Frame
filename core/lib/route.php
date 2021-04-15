@@ -1,6 +1,9 @@
 <?php
 
 namespace core\lib;
+
+use core\lib\config;
+
 class route
 {
     public $ctrl;
@@ -19,7 +22,7 @@ class route
                 $this->action = $pathArray[1];
                 unset($pathArray[1]);
             } else {
-                $this->action = 'index';
+                $this->action = config::get('action', 'route');
             }
             $count = count($pathArray) + 2;
             $i = 2;
@@ -30,8 +33,8 @@ class route
                 $i = $i + 2;
             }
         } else {
-            $this->ctrl = 'index';
-            $this->action = 'index';
+            $this->ctrl = config::get('controllers', 'route');
+            $this->action = config::get('action', 'route');;
         }
     }
 }
