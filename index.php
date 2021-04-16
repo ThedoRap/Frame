@@ -26,13 +26,4 @@ include CORE . '/common/function.php';
 include CORE . '/frame.php';
 spl_autoload_register('\core\frame::load');
 
-//db类
-$db_config = FRAME . '/config/db.php';
-if (is_file($db_config)) {
-    $db_config_return = include $db_config;
-    if (is_array($db_config_return)) {
-        include CORE . '/lib/drive/db/init.php';
-    }
-}
-
 \core\frame::run();

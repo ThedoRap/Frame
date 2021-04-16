@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => 'd655e978ba95e03a24029d6e282d66383f91923d',
+    'reference' => '07bbf6003bfdf8f5120209e2024cc1d5572fdd50',
     'name' => 'vkt/farme',
   ),
   'versions' => 
@@ -28,6 +28,15 @@
       array (
       ),
       'reference' => '0f73288fd15629204f9d42b7055f72dacbe811fc',
+    ),
+    'psr/simple-cache' => 
+    array (
+      'pretty_version' => '1.0.1',
+      'version' => '1.0.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '408d5eafb83c57f6365a3ca330ff23aa4a5fa39b',
     ),
     'symfony/polyfill-mbstring' => 
     array (
@@ -56,6 +65,24 @@
       ),
       'reference' => '89412a68ea2e675b4e44f260a5666729f77f668e',
     ),
+    'topthink/think-helper' => 
+    array (
+      'pretty_version' => 'v3.1.4',
+      'version' => '3.1.4.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'c28d37743bda4a0455286ca85b17b5791d626e10',
+    ),
+    'topthink/think-orm' => 
+    array (
+      'pretty_version' => 'v2.0.39',
+      'version' => '2.0.39.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '39a9d0a0e52d9b8bad9d98484d8484cdf5b683a7',
+    ),
     'vkt/farme' => 
     array (
       'pretty_version' => 'dev-main',
@@ -63,7 +90,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'd655e978ba95e03a24029d6e282d66383f91923d',
+      'reference' => '07bbf6003bfdf8f5120209e2024cc1d5572fdd50',
     ),
   ),
 );
