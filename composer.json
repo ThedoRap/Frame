@@ -1,0 +1,14 @@
+{
+  "name": "vkt/farme",
+  "type": "farme",
+  "description": "farme work",
+  "keywords": [
+    "php",
+    "farme"
+  ],
+  "require": {
+    "php": ">= 7.0",
+    "filp/whoops": "*",
+    "symfony/var-dumper": "*"
+  }
+}

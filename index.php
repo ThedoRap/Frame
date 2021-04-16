@@ -8,14 +8,17 @@ define('APP', FRAME . '/app');
 define('AppFile', 'app');
 define('DEBUG', true);
 
+include "vendor/autoload.php";
 
 if (DEBUG) {
+    $whoops = new \Whoops\Run;
+    $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+    $whoops->register();
     ini_set('display_errors', 'On');
 } else {
     ini_set('display_errors', 'Off');
 
 }
-
 //函数库
 include CORE . '/common/function.php';
 
