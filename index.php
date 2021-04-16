@@ -28,7 +28,7 @@ $db_config = FRAME . '/config/db.php';
 if (is_file($db_config)) {
     $db_config_return = include $db_config;
     if (is_array($db_config_return)) {
-        include CORE . '/lib/db/init.php';
+        include CORE . '/lib/drive/db/init.php';
     }
 }
 

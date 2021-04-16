@@ -109,6 +109,5 @@ function getString($matches)
 }
 
 $_config = include NewROOT . '/config/db.php';
-//dd($_config);
 include_once ROOT . '/Db.class.php';
 include_once ROOT . '/Db/Driver.class.php';

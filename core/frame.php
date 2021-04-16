@@ -13,11 +13,12 @@ class frame
         $routeAction = $route->action;
         $routeCtrl = $route->ctrl;
         $contrFile = APP . '/controllers/' . $routeCtrl . 'Controller.php';
-        $contrFileClass = '\\'.AppFile . '\\controllers\\' . $routeCtrl . 'Controller';
+        $contrFileClass = '\\' . AppFile . '\\controllers\\' . $routeCtrl . 'Controller';
         if (is_file($contrFile)) {
             include $contrFile;
             $controllers = new $contrFileClass;
             $controllers->$routeAction();
+            \core\lib\log::log('controllers:' . $contrFileClass . '   ' . 'action:' . $routeAction);
         } else {
             throw new \Exception(' 找不到控制器：' . $routeCtrl);
         }
