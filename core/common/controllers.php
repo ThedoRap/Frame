@@ -3,6 +3,7 @@
 
 namespace core\common;
 
+use core\lib\server;
 use core\lib\views;
 use core\lib\config;
 
@@ -34,5 +35,15 @@ class controllers
     public function configAll($file)
     {
         return config::all($file);
+    }
+
+    public function getIP()
+    {
+        return server::get_ip();
+    }
+
+    public function device()
+    {
+        return server::is_device();
     }
 }

@@ -7,7 +7,7 @@
     "farme"
   ],
   "require": {
-    "php": ">= 7.0",
+    "php": ">= 7.1",
     "filp/whoops": "*",
     "symfony/var-dumper": "*",
     "topthink/think-orm": "*"

@@ -2,6 +2,8 @@
 
 namespace core;
 
+use core\lib\server;
+
 class frame
 {
     public static $classTop = [];
