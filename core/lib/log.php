@@ -20,3 +20,4 @@ class log
         self::$class->log($name, $file);
     }
 }
+

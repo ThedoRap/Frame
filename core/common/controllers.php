@@ -37,7 +37,7 @@ class controllers
         return config::all($file);
     }
 
-    public function getIP()
+    public function getIp()
     {
         return server::get_ip();
     }
