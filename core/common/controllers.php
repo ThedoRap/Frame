@@ -13,8 +13,10 @@ class controllers
 
     public function __construct()
     {
-        $newViews = new views();
-        $this->views = $newViews;
+        if (empty($this->views)) {
+            $newViews = new views();
+            $this->views = $newViews;
+        }
     }
 
     public function assign($name, $value)
